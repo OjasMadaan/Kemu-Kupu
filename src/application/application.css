@@ -1,0 +1,140 @@
+.root {
+	-fx-background-image: url("../images/background.jpg");
+}
+
+.button {
+	-fx-font-family:  "DejaVu Sans","Roboto Mono Regular" ,Cousine, monospace;
+	-fx-font-size:27.0;
+	-fx-background-radius: 15;
+}
+
+.button:hover {
+	-fx-background-color: rgb(167, 207, 180);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+	-fx-font-size : 28.5;
+}
+
+
+.button:pressed{
+	-fx-background-color: rgb(62, 141, 87);
+}
+
+.combo-box {
+	-fx-font-family:  "DejaVu Sans","Roboto Mono Regular" ,Cousine, monospace;
+	-fx-font-size: 27.0;
+	-fx-background-radius: 15;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+   	-fx-background-color: rgb(167, 207, 180);
+	-fx-text-fill: black;
+}
+
+.text-field {
+	-fx-font-family:  "DejaVu Sans","Roboto Mono Regular" ,Cousine, monospace;
+	-fx-font-size: 23.0;
+	-fx-border-color: rgb(167, 207, 180); 
+	-fx-border-width: 2px ;
+}
+
+.label {
+	-fx-font-family:  "DejaVu Sans","Roboto Mono Regular" ,Cousine, monospace;
+	-fx-background-radius : 10;
+}
+
+.backButton {
+	-fx-background-color: transparent;
+}
+
+.subHeading {
+	-fx-font-size: 30;
+	-fx-background-color: rgb(167, 207, 180);
+}
+
+.title{
+	-fx-font-size: 66;
+	-fx-background-color: rgb(167, 207, 180);
+	-fx-font-family:  "DejaVu Sans","Roboto Mono Regular" ,Cousine, monospace;
+}
+
+.scoreBox {
+	-fx-border-color: rgb(167, 207, 180); 
+	-fx-border-width: 2px ;
+}
+
+.rewardWordLabel {
+	-fx-font-family:  "DejaVu Sans","Roboto Mono Regular" ,Cousine, monospace;
+	-fx-font-size: 26;
+}
+
+.timeBar {
+	-fx-accent: darkgreen;
+}
+
+.rectangle {
+    -fx-arc-height: 5;
+    -fx-arc-width: 5;
+}
+
+#startButton {
+	-fx-font-size: 50.0;
+}
+#practiceButton {
+	-fx-font-size: 50.0;
+}
+
+#deleteUserButton:hover {
+    -fx-background-color: lightgrey;
+}
+
+#deleteUserButton:pressed {
+    -fx-background-color: grey;
+}
+
+#macronHelp{
+    -fx-background-radius : 30;
+    -fx-font-size: 20;
+    -fx-background-color: rgb(167, 207, 180);
+}
+
+#macronHelp:pressed{
+	-fx-background-color: rgb(62, 141, 87);
+}
+
+#hintLabel {
+	-fx-background-color: rgb(167, 207, 180); 
+	-fx-text-fill: black;
+	-fx-font-size: 28.0;
+}
+
+#messageLabel {
+	-fx-text-aligment: center;
+}
+#englishLabel {
+	-fx-text-aligment: center;
+}
+#completeLabel {
+	-fx-background-color: rgb(167, 207, 180); 
+}
+
+#scoreLabel {
+	-fx-font-size: 31;
+}
+#currentScore {
+	-fx-background-color: rgb(167, 207, 180); 
+}
+
+#titleLabel {
+	-fx-background-color: rgb(167, 207, 180);
+	-fx-font-family:  "DejaVu Sans","Roboto Mono Regular" ,Cousine, monospace;
+}
+
+#topicLabel {
+	-fx-background-color: rgb(167, 207, 180); 
+}
+
+#voiceSpeed{
+	-fx-background-color: rgb(167, 207, 180); 
+}
+

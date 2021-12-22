@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserController">
+   <children>
+      <Label fx:id="titleLabel" alignment="CENTER" layoutX="123.0" layoutY="33.0" prefHeight="87.0" prefWidth="504.0" styleClass="title" text="Select User" textAlignment="CENTER">
+         <font>
+            <Font size="63.0" />
+         </font>
+      </Label>
+      <Button fx:id="prevUser" contentDisplay="GRAPHIC_ONLY" layoutX="169.0" layoutY="210.0" mnemonicParsing="false" onAction="#showPrevUser" prefHeight="31.0" prefWidth="64.0" styleClass="backButton" text="Prev">
+         <graphic>
+            <ImageView fitHeight="64.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../images/arrow.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="nextUser" contentDisplay="GRAPHIC_ONLY" layoutX="495.0" layoutY="210.0" mnemonicParsing="false" onAction="#showNextUser" prefHeight="31.0" prefWidth="64.0" styleClass="backButton" text="Next">
+         <graphic>
+            <ImageView fitHeight="69.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/arrow.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fx:id="userIcon" fitHeight="197.0" fitWidth="196.0" layoutX="278.0" layoutY="146.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/femaleIcon.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label fx:id="usernameLabel" alignment="CENTER" layoutX="6.0" layoutY="342.0" prefHeight="63.0" prefWidth="750.0" text="Username">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="271.0" layoutY="420.0" mnemonicParsing="false" onAction="#selectReturningUser" prefHeight="49.0" prefWidth="220.0" text="Select" />
+      <Button contentDisplay="GRAPHIC_ONLY" layoutX="6.0" layoutY="4.0" mnemonicParsing="false" onAction="#backButton" prefHeight="58.0" prefWidth="76.0" styleClass="backButton" text="Back">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="return to previous screen">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </Button>
+      <Button fx:id="deleteUserButton" layoutX="271.0" layoutY="536.0" mnemonicParsing="false" onAction="#deleteUser" prefHeight="50.0" prefWidth="220.0" text="Delete User" textFill="#ed0505" />
+   </children>
+</AnchorPane>

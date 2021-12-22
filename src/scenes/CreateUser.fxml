@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="titleLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserController">
+   <children>
+      <TextField fx:id="usernameField" alignment="CENTER" layoutX="279.0" layoutY="177.0" prefHeight="47.0" prefWidth="436.0" promptText="Username" />
+      <Label fx:id="titleLabel" alignment="CENTER" layoutX="108.0" layoutY="14.0" prefHeight="123.0" prefWidth="548.0" styleClass="title" text="Create User" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="83.0" />
+         </font>
+      </Label>
+      <Button fx:id="femaleIcon" contentDisplay="GRAPHIC_ONLY" layoutX="70.0" layoutY="320.0" mnemonicParsing="false" onAction="#selectIcon" prefHeight="130.0" prefWidth="130.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="136.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/femaleIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="maleIcon" contentDisplay="GRAPHIC_ONLY" layoutX="513.0" layoutY="320.0" mnemonicParsing="false" onAction="#selectIcon" prefHeight="130.0" prefWidth="130.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="139.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/maleIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="174.0" prefHeight="55.0" prefWidth="229.0" styleClass="subHeading" text="Username:" textAlignment="CENTER">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="214.0" layoutY="257.0" prefHeight="43.0" prefWidth="322.0" styleClass="subHeading" text="Select Icon" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button contentDisplay="RIGHT" layoutX="241.0" layoutY="510.0" mnemonicParsing="false" onAction="#createUser" prefHeight="55.0" prefWidth="277.0" text="Create">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/addUser.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button contentDisplay="GRAPHIC_ONLY" layoutX="4.0" layoutY="5.0" mnemonicParsing="false" onAction="#backButton" prefHeight="55.0" prefWidth="60.0" styleClass="backButton">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/back.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label fx:id="promptLabel" alignment="CENTER" layoutX="64.0" layoutY="123.0" prefHeight="43.0" prefWidth="597.0" text="Prompt Text" textFill="RED" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="tikiIcon" contentDisplay="GRAPHIC_ONLY" layoutX="297.0" layoutY="320.0" mnemonicParsing="false" onAction="#selectIcon" prefHeight="130.0" prefWidth="130.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="132.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/tikiIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+.dialog-pane{
+  	-fx-border-color:  rgb(167, 207, 180);
+ 	-fx-border-width:2.0px;
+  	-fx-font-size: 27.0;
+	-fx-font-family:  "DejaVu Sans","Roboto Mono Regular" ,Cousine, monospace;
+}
+
+.dialog-pane .button {
+	-fx-background-radius: 15;
+}
+
+.dialog-pane .button:hover{     
+  	-fx-background-color:  rgb(167, 207, 180);
+  	-fx-text-fill:black;
+	-fx-background-color: rgb(167, 207, 180);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.dialog-pane .button:pressed{     
+  	-fx-background-color: rgb(62, 141, 87);
+ 	-fx-text-fill:black;
+}
