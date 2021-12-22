@@ -11,3 +11,7 @@ Add Executable Permissions to the shell script
 
 ### To run the Kēmu Kupu Application: 
 > $ ./kemukupu.sh
+
+
+### Note:
+Must have Festival-tts installed on linux. (Māori voice for festival will be uploaded soon.)
